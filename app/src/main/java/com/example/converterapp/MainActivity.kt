@@ -18,8 +18,13 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         val buttonExchangeRate = findViewById<Button>(R.id.buttonCalculate)
+        val buttonInfo = findViewById<Button>(R.id.buttonInfo)
         buttonExchangeRate.setOnClickListener {
             val intent = Intent(this, ExchangeRateActivity::class.java)
+            startActivity(intent)
+        }
+        buttonInfo.setOnClickListener {
+            val intent = Intent(this, InfoActivity::class.java)
             startActivity(intent)
         }
         }

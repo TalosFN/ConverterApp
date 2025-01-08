@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">ConverterApp</string>
+    <string name="api">Источник (API - Национальный банк Республики Беларусь)</string>
+    <string name="Welcome_Text">Выбранные курсы валют (курсы валют относительно Белорусского рубля)</string>
+    <string name="naming">Название: Американский доллар</string>
+    <string name="usd">Абривиатура: USD</string>
 </resources>

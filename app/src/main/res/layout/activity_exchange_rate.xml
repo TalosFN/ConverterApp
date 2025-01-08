@@ -5,50 +5,71 @@
     android:orientation="vertical"
     android:padding="16dp">
 
+    <!-- Верхний текст -->
     <TextView
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Введите количество:" />
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="Введите количество:"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp" />
 
+    <!-- Поле ввода -->
     <EditText
         android:id="@+id/editTextAmount"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:inputType="numberDecimal" />
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:inputType="numberDecimal"
+        android:background="@android:drawable/edit_text"
+        android:padding="8dp" />
 
+    <!-- Текст перед спиннером -->
     <TextView
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="Выберите валюту:"
         android:layout_marginTop="16dp"
-        android:text="Выберите валюту:" />
+        android:textSize="18sp"
+        android:textStyle="bold" />
 
+    <!-- Спиннер -->
     <Spinner
         android:id="@+id/spinnerFromCurrency"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="0dp"
+        android:layout_weight="1" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="В какую валюту перевести:" />
-
-    <Spinner
-        android:id="@+id/spinnerToCurrency"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
-
+    <!-- Кнопка -->
     <Button
         android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="Перевести" />
-    <TextView
-        android:id="@+id/tv"
-        android:layout_width="200dp"
-        android:text="sdasdsad"
-        android:layout_height="100dp"/>
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_gravity="center_horizontal"
+        android:text="Перевести"
+        android:backgroundTint="@android:color/holo_green_light"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp" />
 
+    <!-- Результат в клетке -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:background="@drawable/item_border"
+        android:gravity="center"
+        android:padding="16dp">
 
+        <TextView
+            android:id="@+id/tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Результат"
+            android:textSize="18sp"
+            android:textColor="@android:color/black" />
+    </LinearLayout>
 </LinearLayout>

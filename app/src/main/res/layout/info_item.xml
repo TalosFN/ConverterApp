@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cardView="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    cardView:cardCornerRadius="8dp"
+    cardView:cardElevation="4dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+        <!-- Дата курса -->
+        <TextView
+            android:id="@+id/tv_Date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Дата: 2025-01-01"
+            android:textSize="14sp"
+            android:textColor="@android:color/black"
+            android:layout_marginBottom="4dp" />
+
+        <!-- Масштаб -->
+        <TextView
+            android:id="@+id/tv_Scale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Масштаб: 1"
+            android:textSize="14sp"
+            android:textColor="@android:color/black"
+            android:layout_marginBottom="4dp" />
+
+        <!-- Название валюты -->
+        <TextView
+            android:id="@+id/tv_Name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/naming"
+            android:textSize="16sp"
+            android:textColor="@android:color/black"
+            android:layout_marginBottom="4dp" />
+        <TextView
+            android:id="@+id/tv_Abr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/usd"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:layout_marginBottom="4dp" />
+
+        <!-- Курс -->
+        <TextView
+            android:id="@+id/tv_Rate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Курс: 2.56"
+            android:textSize="16sp"
+            android:textColor="@android:color/holo_green_dark" />
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
