@@ -43,7 +43,7 @@ class ExchangeRateActivity : AppCompatActivity() {
         val api = retrofit.create(ApiService::class.java)
         suspend fun calc(id: Int, amount: Double): Double {
             val rate = api.getRateById(id)
-            val sum = rate.Cur_OfficialRate * amount * rate.Cur_Scale
+            val sum = rate.Cur_OfficialRate * amount / rate.Cur_Scale
             return sum
         }
 
