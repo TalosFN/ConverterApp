@@ -5,15 +5,16 @@
     android:orientation="vertical"
     android:padding="16dp">
 
-    <!-- Верхний текст -->
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:text="Введите количество:"
+        android:text="Введите количество в инностранной валюте:"
         android:textSize="20sp"
         android:textStyle="bold"
         android:layout_marginBottom="8dp" />
+
 
     <!-- Поле ввода -->
     <EditText
@@ -68,7 +69,7 @@
             android:id="@+id/tv"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Результат"
+            android:text="Результат в Белорусских рублях"
             android:textSize="18sp"
             android:textColor="@android:color/black" />
     </LinearLayout>

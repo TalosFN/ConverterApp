@@ -1,6 +1,8 @@
 package com.example.converterapp
 
+import android.content.Intent
 import android.os.Bundle
+import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -14,8 +16,13 @@ import retrofit2.converter.gson.GsonConverterFactory
 
 class InfoActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
+        var btn = findViewById<Button>(R.id.btnBack)
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_info)
+        btn.setOnClickListener{
+            val intent = Intent(this, MainActivity::class.java)
+            startActivity(intent)
+        }
         val recyclerView: RecyclerView = findViewById(R.id.rvCurrencyList)
         val retrofit =
             Retrofit.Builder().baseUrl("https://api.nbrb.by").addConverterFactory(
